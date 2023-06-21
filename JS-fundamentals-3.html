@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(a) {
+        return a + 7
+    }
+
+    function multiply(a,b) {
+        return a * b;
+    }
+
+    function capitalize(string) {
+        const firstLetter = string.charAt(0); //Grabbing the first letter of string
+        const firstLetterCap = firstLetter.toUpperCase(); //Taking the first letter and capping it
+        const remainingLetters = string.slice(1); // Grabbing the rest of the letter in string
+        const capWord = firstLetterCap + remainingLetters; // Adding the captured first letter + the remaining letters
+        console.log(capWord);
+    }
+
+    function lastLetter(string) {
+        const last = string.slice(-1);
+        console.log(last);
+    }
+
+    </script>
+</body>
+</html>
